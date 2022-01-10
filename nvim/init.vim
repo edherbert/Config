@@ -6,10 +6,14 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'kien/ctrlp.vim'
+"Plug 'kien/ctrlp.vim'
 Plug 'vim-scripts/DeleteTrailingWhitespace'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'wfxr/minimap.vim'
+Plug 'mhinz/vim-startify'
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
@@ -20,6 +24,11 @@ tnoremap <F4> <C-\><C-n>
 "Auto insert } for a {
 inoremap { {<CR>}<Esc>ko
 
+"Telescope stuff
+nnoremap <C-p> <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 set number
 set ruler
