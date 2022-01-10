@@ -24,6 +24,8 @@ tnoremap <F4> <C-\><C-n>
 "Auto insert } for a {
 inoremap { {<CR>}<Esc>ko
 
+au BufNewFile,BufRead *.nut setf squirrel
+
 "Telescope stuff
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
